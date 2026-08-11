@@ -1,15 +1,41 @@
+import resumeiqImage from "../assets/images/resumeiq.png";
+import deskflowImage from "../assets/images/deskflow.png";
+import healthChatbotImage from "../assets/images/health-chatbot.png";
+import sentimentAnalysisImage from "../assets/images/sentiment-analysis.png";
+
+/* =====================================================
+   PROFILE
+===================================================== */
+
 export const PROFILE = {
   name: "Fezile Mnisi",
+
   role: "Software Developer",
-  taglineWords: ["Software Developer", "Data Analyst", "Backend Developer"],
+
+  taglineWords: [
+    "Software Developer",
+    "Backend Developer",
+    "AI Enthusiast",
+  ],
+
   summary:
-    "I build reliable, well-tested software and enjoy pairing traditional engineering discipline with modern AI-assisted workflows. Computer Science & Statistics graduate, currently sharpening my craft through the CAPACITI YES Programme — focused on writing clean backend systems and shipping products people actually enjoy using.",
+    "Software Developer passionate about building scalable web applications, AI-powered solutions, and data-driven systems. I enjoy creating modern user experiences, solving real-world problems, and continuously learning new technologies. Currently sharpening my skills through the CAPACITI YES Programme while building production-ready software projects.",
+
   email: "fezilemnisi92@gmail.com",
+
   location: "Johannesburg, South Africa",
+
   github: "https://github.com/Fezile123",
-  linkedin: "https://www.linkedin.com/in/fezileamnisi/",
+
+  linkedin: "https://linkedin.com/in/fezileamnisi",
+
   resumeUrl: "/resume.pdf",
 };
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
 
 export const NAV_LINKS = [
   { label: "Home", href: "#home" },
@@ -22,326 +48,451 @@ export const NAV_LINKS = [
   { label: "Contact", href: "#contact" },
 ];
 
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
 export const ABOUT_HIGHLIGHTS = [
   {
-    title: "Computer Science & Statistics",
+    title: "Software Development",
+
     description:
-      "Graduated with a strong foundation in algorithms, data structures, and statistical reasoning — the backbone of every system I design.",
+      "Build modern full-stack applications using React, Node.js, Express, Flask, PostgreSQL and REST APIs.",
   },
+
   {
-    title: "CAPACITI YES Programme",
+    title: "Artificial Intelligence",
+
     description:
-      "Currently sharpening production-grade software development skills through an intensive, industry-aligned training programme.",
+      "Develop AI-powered applications using AI APIs, prompt engineering, natural language processing and machine learning techniques.",
   },
+
   {
-    title: "AI-Assisted Development",
+    title: "Backend Development",
+
     description:
-      "I use LLMs and prompt engineering as force multipliers — to prototype faster, review code critically, and ship with confidence.",
+      "Design secure backend systems with authentication, databases, APIs and scalable architectures.",
   },
+
   {
     title: "Problem Solving",
+
     description:
-      "I enjoy breaking down ambiguous problems into small, testable pieces and building up from there.",
+      "Enjoy solving real-world challenges by building efficient, maintainable and user-focused software solutions.",
   },
+
   {
     title: "Continuous Learning",
+
     description:
-      "New frameworks, new papers, new tools — I stay curious and treat every project as a chance to learn something that sticks.",
+      "Committed to learning new technologies, improving development practices and growing as a software engineer every day.",
   },
+
   {
-    title: "Career Goals",
+    title: "Career Goal",
+
     description:
-      "Working toward a career where solid backend engineering meets applied AI — building systems that are both intelligent and dependable.",
+      "To become a highly skilled Software Engineer building intelligent systems that create meaningful impact.",
   },
 ];
 
+
+/* =====================================================
+   SKILLS
+===================================================== */
+
 export const SKILLS = {
   Programming: [
-    { name: "Python", level: 88 },
-    { name: "Java", level: 78 },
-    { name: "JavaScript", level: 85 },
+    { name: "Java", level: 88 },
+    { name: "JavaScript", level: 90 },
+    { name: "Python", level: 85 },
     { name: "SQL", level: 82 },
   ],
+
   Frontend: [
-    { name: "React", level: 84 },
-    { name: "HTML", level: 92 },
-    { name: "CSS", level: 88 },
-    { name: "Tailwind CSS", level: 86 },
+    { name: "React", level: 90 },
+    { name: "HTML5", level: 95 },
+    { name: "CSS3", level: 90 },
+    { name: "Tailwind CSS", level: 88 },
   ],
+
   Backend: [
-    { name: "Node.js", level: 80 },
-    { name: "Express", level: 78 },
-    { name: "Flask", level: 75 },
-    { name: "PostgreSQL", level: 77 },
+    { name: "Node.js", level: 86 },
+    { name: "Express.js", level: 84 },
+    { name: "Flask", level: 82 },
+    { name: "PostgreSQL", level: 80 },
   ],
-  Tools: [
-    { name: "Git", level: 90 },
-    { name: "GitHub", level: 90 },
-    { name: "VS Code", level: 95 },
-  ],
+
   AI: [
-    { name: "Prompt Engineering", level: 88 },
-    { name: "Generative AI", level: 82 },
-    { name: "LLMs", level: 80 },
-    { name: "Power BI", level: 74 },
+    { name: "AI APIs", level: 86 },
+    { name: "Prompt Engineering", level: 90 },
+    { name: "Generative AI", level: 84 },
+    { name: "Machine Learning", level: 78 },
   ],
+
+  Tools: [
+    { name: "Git", level: 92 },
+    { name: "GitHub", level: 92 },
+    { name: "VS Code", level: 95 },
+    { name: "Docker", level: 72 },
+  ],
+
   "Soft Skills": [
+    { name: "Problem Solving", level: 95 },
     { name: "Communication", level: 90 },
-    { name: "Leadership", level: 80 },
+    { name: "Critical Thinking", level: 90 },
     { name: "Teamwork", level: 92 },
-    { name: "Critical Thinking", level: 88 },
-    { name: "Problem Solving", level: 90 },
+    { name: "Adaptability", level: 90 },
   ],
 };
+
+
+/* =====================================================
+   EXPERIENCE
+===================================================== */
 
 export const EXPERIENCE = [
   {
     id: "capaciti",
+
     role: "Software Development Trainee",
+
     org: "CAPACITI YES Programme",
-    period: "2024 — Present",
+
+    period: "2026 – Present",
+
     location: "Johannesburg, South Africa",
+
     summary:
-      "Intensive, industry-aligned software development training focused on full-stack engineering, cloud fundamentals, and professional workplace readiness.",
+      "Participating in an intensive software development programme focused on building production-ready applications using modern technologies and Agile methodologies.",
+
     points: [
-      "Built and shipped full-stack projects using React, Node.js, and PostgreSQL under real deadlines.",
-      "Collaborated in agile squads using sprint planning, stand-ups, and peer code review.",
-      "Practiced AI-assisted development workflows to speed up prototyping without sacrificing code quality.",
-      "Completed technical assessments covering data structures, algorithms, and system design fundamentals.",
+      "Develop full-stack web applications using React, Node.js, Express and PostgreSQL.",
+      "Build AI-powered software solutions using AI APIs and prompt engineering.",
+      "Collaborate within Agile teams using Git and GitHub version control.",
+      "Apply software engineering best practices including clean code, testing and documentation.",
     ],
-    tags: ["React", "Node.js", "PostgreSQL", "Agile", "AI Tools"],
+
+    tags: [
+      "React",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Git",
+      "AI",
+    ],
   },
+
   {
-    id: "barc",
-    role: "IT Support & Junior Developer Intern",
-    org: "BARC SA",
-    period: "2023 — 2024",
-    location: "South Africa",
+    id: "pns",
+
+    role: "IT Learnership",
+
+    org: "PNS Group",
+
+    period: "2025 – Present",
+
+    location: "Johannesburg, South Africa",
+
     summary:
-      "Supported internal systems and contributed to small automation scripts and internal tooling while learning enterprise development practices.",
+      "Gaining practical workplace experience while strengthening technical, analytical and professional skills through structured industry training.",
+
     points: [
-      "Diagnosed and resolved technical support tickets across hardware, software, and network issues.",
-      "Wrote Python scripts to automate repetitive data-entry and reporting tasks, saving hours of manual work weekly.",
-      "Assisted in maintaining internal documentation and knowledge-base articles for the IT team.",
-      "Gained first-hand exposure to enterprise-grade version control and change-management processes.",
+      "Develop practical problem-solving and technical support skills.",
+      "Work effectively within professional teams and business environments.",
+      "Strengthen communication, collaboration and workplace readiness.",
+      "Continuously improve software development and IT knowledge.",
     ],
-    tags: ["Python", "SQL", "Automation", "Git", "IT Support"],
+
+    tags: [
+      "IT Support",
+      "Professional Development",
+      "Communication",
+      "Problem Solving",
+    ],
   },
+
   {
-    id: "ul",
-    role: "Computer Science & Statistics Student",
+    id: "university",
+
+    role: "BSc Mathematical Science Graduate",
+
     org: "University of Limpopo",
-    period: "2020 — 2023",
+
+    period: "2020 – 2024",
+
     location: "Limpopo, South Africa",
+
     summary:
-      "Bachelor's degree combining Computer Science and Statistics — algorithms, databases, statistical modelling, and software engineering fundamentals.",
+      "Completed a Bachelor of Science in Mathematical Sciences with majors in Computer Science and Statistics, developing strong analytical and software development skills.",
+
     points: [
-      "Built academic projects spanning data structures, relational databases, and statistical analysis.",
-      "Developed a strong grounding in probability and statistical inference alongside core CS coursework.",
-      "Participated in group software projects, learning to plan, divide, and integrate work across a team.",
+      "Built academic software development projects using Java and Python.",
+      "Studied algorithms, databases, operating systems and computer networks.",
+      "Applied statistical analysis and mathematical modelling techniques.",
+      "Collaborated on software engineering and programming projects.",
     ],
-    tags: ["Algorithms", "Statistics", "Databases", "Java", "Python"],
+
+    tags: [
+      "Java",
+      "Statistics",
+      "Computer Science",
+      "Algorithms",
+    ],
   },
 ];
 
-export const PROJECT_CATEGORIES = ["All", "Full Stack", "AI", "Backend", "Data"];
+
+/* =====================================================
+   PROJECT CATEGORIES
+===================================================== */
+
+export const PROJECT_CATEGORIES = [
+  "All",
+  "AI",
+  "Full Stack",
+  "Data",
+];
+
+
+/* =====================================================
+   PROJECTS
+===================================================== */
 
 export const PROJECTS = [
   {
-    id: "proj-1",
-    title: "InsightBoard — AI Analytics Dashboard",
+    id: "resumeiq",
+
+    title: "ResumeIQ — AI Resume Assistant",
+
     category: "AI",
+
+    image: resumeiqImage,
+
     description:
-      "A real-time analytics dashboard that uses an LLM to translate plain-English questions into SQL queries and auto-generated charts.",
+      "An AI-powered resume analysis platform that reviews CVs, evaluates ATS compatibility, provides actionable feedback, and helps job seekers improve their resumes.",
+
     features: [
-      "Natural-language to SQL query engine",
-      "Live-updating charts with WebSocket data",
-      "Role-based access control",
-      "Exportable PDF reports",
+      "AI-powered resume analysis",
+      "ATS compatibility assessment",
+      "Resume improvement recommendations",
+      "Modern responsive interface",
     ],
-    tech: ["React", "Node.js", "PostgreSQL", "OpenAI API", "Tailwind CSS"],
-    image: "insightboard",
-    github: "https://github.com/fezilemnisi/insightboard",
-    demo: "https://insightboard.example.com",
+
+    tech: [
+      "React",
+      "AI",
+      "Lovable",
+      "Tailwind CSS",
+    ],
+
+    github:
+      "https://github.com/Fezile123/ai-resume-assistanttool",
+
+    demo:
+      "https://resumeiq-ai-tool.lovable.app/",
+
     featured: true,
   },
+
+
   {
-    id: "proj-2",
-    title: "TaskFlow — Team Productivity Suite",
+    id: "deskflow",
+
+    title: "DeskFlow",
+
     category: "Full Stack",
+
+    image: deskflowImage,
+
     description:
-      "A Kanban-based project management tool with real-time collaboration, built to help small teams plan sprints without the bloat.",
+      "A modern Internal IT Service Request Portal that enables employees to submit support tickets while administrators manage requests through a centralized dashboard with analytics and intelligent ticket classification.",
+
     features: [
-      "Drag-and-drop Kanban boards",
-      "Real-time multi-user sync",
-      "Sprint velocity analytics",
-      "Slack notification integration",
+      "IT service request management",
+      "AI-powered ticket classification",
+      "Analytics dashboard",
+      "Role-based authentication",
     ],
-    tech: ["React", "Express", "PostgreSQL", "Socket.io"],
-    image: "taskflow",
-    github: "https://github.com/fezilemnisi/taskflow",
-    demo: "https://taskflow.example.com",
+
+    tech: [
+      "React",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Prisma",
+      "Tailwind CSS",
+    ],
+
+    github:
+      "https://github.com/Fezile123/Internal-IT-Service-Request-Portal-DeskFlow-",
+
+    demo:
+      "https://deskflow-frontend-app.onrender.com/",
+
     featured: true,
   },
+
+
   {
-    id: "proj-3",
-    title: "ShopAPI — Headless Commerce Backend",
-    category: "Backend",
+    id: "health-chatbot",
+
+    title: "Health Chatbot",
+
+    category: "AI",
+
+    image: healthChatbotImage,
+
     description:
-      "A headless e-commerce API handling catalog, cart, and order flows, designed for high-throughput read paths and safe checkout writes.",
+      "An AI-powered healthcare chatbot that provides responses to common health-related questions through a simple conversational interface.",
+
     features: [
-      "JWT authentication & refresh tokens",
-      "Idempotent checkout endpoint",
-      "Redis-backed cart sessions",
-      "Automated integration test suite",
+      "Conversational AI",
+      "Health information assistant",
+      "Natural language interaction",
+      "Responsive user interface",
     ],
-    tech: ["Node.js", "Express", "PostgreSQL", "Redis"],
-    image: "shopapi",
-    github: "https://github.com/fezilemnisi/shopapi",
-    demo: "https://shopapi.example.com",
-    featured: false,
+
+    tech: [
+      "React",
+      "Python",
+      "Flask",
+      "AI",
+      "Tailwind CSS",
+    ],
+
+    github:
+      "https://github.com/orgs/Health-ChatBot-Project/dashboard",
+
+    demo:
+      "https://healthchatbotai.netlify.app/",
+
+    featured: true,
   },
+
+
   {
-    id: "proj-4",
-    title: "ChurnLens — Customer Churn Predictor",
+    id: "sentiment-analysis",
+
+    title: "Sentiment Analysis Dashboard",
+
     category: "Data",
+
+    image: sentimentAnalysisImage,
+
     description:
-      "A statistical model and interactive report that flags customers likely to churn, built on top of a synthetic subscription dataset.",
+      "A machine learning web application that analyzes text sentiment, classifies feedback as positive, negative, or neutral, and visualizes results through an interactive dashboard.",
+
     features: [
-      "Logistic regression churn model",
-      "Feature importance visualisation",
-      "Power BI executive summary report",
-      "CSV batch scoring endpoint",
+      "Sentiment prediction",
+      "Positive, negative, and neutral classification",
+      "Interactive data visualization",
+      "Machine learning model",
     ],
-    tech: ["Python", "Flask", "Power BI", "SQL"],
-    image: "churnlens",
-    github: "https://github.com/fezilemnisi/churnlens",
-    demo: "https://churnlens.example.com",
-    featured: false,
-  },
-  {
-    id: "proj-5",
-    title: "PromptForge — Prompt Engineering Playground",
-    category: "AI",
-    description:
-      "A lightweight playground for testing, versioning, and comparing prompt variations against multiple LLM configurations side by side.",
-    features: [
-      "Side-by-side prompt comparison",
-      "Prompt version history",
-      "Token & cost estimator",
-      "Shareable prompt links",
+
+    tech: [
+      "Python",
+      "Flask",
+      "Pandas",
+      "Scikit-learn",
+      "Matplotlib",
+      "HTML/CSS",
     ],
-    tech: ["React", "Node.js", "OpenAI API", "Tailwind CSS"],
-    image: "promptforge",
-    github: "https://github.com/fezilemnisi/promptforge",
-    demo: "https://promptforge.example.com",
+
+    github:
+      "https://github.com/Fezile123/sentiment-analysis-dashboard",
+
+    demo:
+      "https://sentiment-analysis-dashboard-app.onrender.com/",
+
     featured: true,
-  },
-  {
-    id: "proj-6",
-    title: "GradeTrack — Student Performance Tracker",
-    category: "Full Stack",
-    description:
-      "A grade-tracking application for tutors to log assessments and visualise a student's progress across a term at a glance.",
-    features: [
-      "Per-student progress timeline",
-      "CSV import for bulk grades",
-      "Automatic performance alerts",
-      "Printable term reports",
-    ],
-    tech: ["React", "Flask", "SQLite"],
-    image: "gradetrack",
-    github: "https://github.com/fezilemnisi/gradetrack",
-    demo: "https://gradetrack.example.com",
-    featured: false,
   },
 ];
+
+
+/* =====================================================
+   CERTIFICATIONS
+===================================================== */
 
 export const CERTIFICATIONS = [
   {
     id: "cert-1",
-    title: "Meta Front-End Developer Professional Certificate",
-    issuer: "Coursera",
-    date: "2024",
-    credentialId: "COURSERA-FE-2024-0192",
+
+    title: "Introduction to Generative AI",
+
+    issuer: "Google Cloud Skills Boost",
+
+    date: "2025",
+
+    credentialId: "",
   },
+
   {
     id: "cert-2",
-    title: "Azure Fundamentals (AZ-900)",
-    issuer: "Microsoft",
-    date: "2024",
-    credentialId: "MS-AZ900-2024-7731",
+
+    title: "Prompt Design in Vertex AI",
+
+    issuer: "Google Cloud Skills Boost",
+
+    date: "2025",
+
+    credentialId: "",
   },
+
   {
     id: "cert-3",
-    title: "Software Development Foundations",
-    issuer: "FNB App Academy",
-    date: "2023",
-    credentialId: "FNB-SDF-2023-0456",
+
+    title: "Introduction to Large Language Models",
+
+    issuer: "Google Cloud Skills Boost",
+
+    date: "2025",
+
+    credentialId: "",
   },
+
   {
     id: "cert-4",
-    title: "Digital Skills for the 4th Industrial Revolution",
-    issuer: "NEMISA",
-    date: "2023",
-    credentialId: "NEMISA-4IR-2023-3391",
+
+    title: "Introduction to Responsible AI",
+
+    issuer: "Google Cloud Skills Boost",
+
+    date: "2025",
+
+    credentialId: "",
+  },
+
+  {
+    id: "cert-5",
+
+    title: "Introduction to Image Generation",
+
+    issuer: "Google Cloud Skills Boost",
+
+    date: "2025",
+
+    credentialId: "",
   },
 ];
+
+
+/* =====================================================
+   EDUCATION
+===================================================== */
 
 export const EDUCATION = [
   {
     id: "edu-1",
+
     school: "University of Limpopo",
-    degree: "Bachelor's Degree — Computer Science & Statistics",
-    period: "2020 — 2023",
+
+    degree: "Bachelor of Science in Mathematical Sciences",
+
+    period: "2020 – 2024",
+
     description:
-      "Coursework spanning algorithms, data structures, database systems, and statistical modelling, with a final-year project in applied data analysis.",
-  },
-  {
-    id: "edu-2",
-    school: "National Senior Certificate (Matric)",
-    degree: "Mathematics, Physical Sciences, Information Technology",
-    period: "2019",
-    description:
-      "Completed the National Senior Certificate with distinctions in Mathematics and Information Technology.",
+      "Majored in Computer Science and Statistics with coursework in software development, algorithms, database systems, operating systems, computer networks, mathematics and statistical analysis.",
   },
 ];
-
-export const TESTIMONIALS = [
-  {
-    id: "t1",
-    name: "Thandiwe Nkosi",
-    role: "Programme Lead, CAPACITI YES",
-    quote:
-      "Fezile consistently delivers clean, well-documented code and asks the right questions before writing a single line. A dependable engineer to have on any team.",
-  },
-  {
-    id: "t2",
-    name: "Sipho Radebe",
-    role: "Senior Developer, BARC SA",
-    quote:
-      "What stood out was the initiative — automating manual reports without being asked, then explaining the trade-offs clearly to non-technical stakeholders.",
-  },
-  {
-    id: "t3",
-    name: "Amahle Dube",
-    role: "Peer Reviewer, CAPACITI YES",
-    quote:
-      "Reviews code like a senior engineer already — thorough, kind, and always focused on maintainability over cleverness.",
-  },
-];
-
-export const GITHUB_STATS = {
-  username: "fezilemnisi",
-  repos: 34,
-  followers: 128,
-  following: 76,
-  contributions: 842,
-  topLanguages: [
-    { name: "Python", percent: 34, color: "#3B82F6" },
-    { name: "JavaScript", percent: 28, color: "#06B6D4" },
-    { name: "TypeScript", percent: 16, color: "#22C55E" },
-    { name: "SQL", percent: 12, color: "#94A3B8" },
-    { name: "HTML/CSS", percent: 10, color: "#2563EB" },
-  ],
-};

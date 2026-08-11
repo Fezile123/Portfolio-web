@@ -1,37 +1,33 @@
-import { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
+
 import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Skills from "./sections/Skills";
-
-const Experience = lazy(() => import("./sections/Experience"));
-const Projects = lazy(() => import("./sections/Projects"));
-const Certifications = lazy(() => import("./sections/Certifications"));
-const Education = lazy(() => import("./sections/Education"));
-const Contact = lazy(() => import("./sections/Contact"));
-
-function SectionFallback() {
-  return <div className="py-24 text-center text-muted text-sm">Loading…</div>;
-}
+import Experience from "./sections/Experience";
+import Projects from "./sections/Projects";
+import Certifications from "./sections/Certifications";
+import Education from "./sections/Education";
+import Contact from "./sections/Contact";
 
 function Portfolio() {
   return (
     <>
       <Navbar />
+
       <main>
         <Hero />
         <About />
         <Skills />
-        <Suspense fallback={<SectionFallback />}>
-          <Experience />
-          <Projects />
-          <Certifications />
-          <Education />
-          <Contact />
-        </Suspense>
+        <Experience />
+        <Projects />
+        <Certifications />
+        <Education />
+        <Contact />
       </main>
+
       <Footer />
     </>
   );

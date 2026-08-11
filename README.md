@@ -61,7 +61,6 @@ The brief asked for placeholders that are easy to swap out. Before shipping to p
 3. **Project images** — each project card currently renders a gradient placeholder with
    the project's first word. Add real screenshots/mockups per project in `PROJECTS` in
    `data.js` and update `ProjectCard` in `src/sections/Projects.jsx` to render an `<img>`.
-4. **GitHub stats** — `GITHUB_STATS` in `data.js` is illustrative. Wire it up to the real
    GitHub REST/GraphQL API (or a service like github-readme-stats) for live numbers.
 5. **Contact form** — `Contact.jsx` currently simulates a submission with a timeout. Wire
    `handleSubmit` to a real email service (e.g. Formspree, EmailJS, or your own API route).
