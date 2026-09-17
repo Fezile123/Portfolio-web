@@ -9,6 +9,17 @@ import fnbLogo from "../assets/images/itvarsity.png";
 const certificates = [
   {
     id: 1,
+    title: "Software Development",
+    issuer: "Coursera",
+    date: "Issued Aug 2026",
+    credential: "X3mhBsI2SX-5oQbCNgl_GQ",
+    skills:
+      "Web Applications • Version Control • Web Development • Virtual Machines",
+    logo: courseraLogo,
+    link: "https://coursera.org/share/2349645d046b342c85fa3e39a7dabd70",
+  },
+  {
+    id: 2,
     title: "Artificial Intelligence (AI) Bootcamp",
     issuer: "Coursera",
     date: "Issued Jun 2026",
@@ -16,10 +27,10 @@ const certificates = [
     skills:
       "Machine Learning • Artificial Intelligence • Neural Networks • Prompt Engineering",
     logo: courseraLogo,
-    link: "#",
+    link: "https://coursera.org/share/38209156097677140caeca7e5ac51c1a",
   },
   {
-    id: 2,
+    id: 3,
     title: "Google AI Essentials Specialization",
     issuer: "Coursera",
     date: "Issued May 2026",
@@ -27,10 +38,10 @@ const certificates = [
     skills:
       "Google AI • Prompt Engineering • Google Sheets • Generative AI",
     logo: courseraLogo,
-    link: "#",
+    link: "https://coursera.org/share/07efb698848be91b81bbe3d747635914",
   },
   {
-    id: 3,
+    id: 4,
     title: "Microsoft AI & Cybersecurity Course",
     issuer: "National Electronic Media Institute of South Africa (NEMISA)",
     date: "Issued Dec 2025",
@@ -41,7 +52,7 @@ const certificates = [
     link: "#",
   },
   {
-    id: 4,
+    id: 5,
     title: "FNB App Academy 2025",
     issuer: "IT Varsity",
     date: "Issued Jul 2025",

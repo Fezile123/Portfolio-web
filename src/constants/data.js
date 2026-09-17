@@ -156,7 +156,7 @@ export const EXPERIENCE = [
   {
     id: "capaciti",
 
-    role: "Software Development Trainee",
+    role: "End-to-End Technology Intern",
 
     org: "CAPACITI YES Programme",
 
@@ -181,35 +181,6 @@ export const EXPERIENCE = [
       "PostgreSQL",
       "Git",
       "AI",
-    ],
-  },
-
-  {
-    id: "pns",
-
-    role: "IT Learnership",
-
-    org: "PNS Group",
-
-    period: "2025 – Present",
-
-    location: "Johannesburg, South Africa",
-
-    summary:
-      "Gaining practical workplace experience while strengthening technical, analytical and professional skills through structured industry training.",
-
-    points: [
-      "Develop practical problem-solving and technical support skills.",
-      "Work effectively within professional teams and business environments.",
-      "Strengthen communication, collaboration and workplace readiness.",
-      "Continuously improve software development and IT knowledge.",
-    ],
-
-    tags: [
-      "IT Support",
-      "Professional Development",
-      "Communication",
-      "Problem Solving",
     ],
   },
 

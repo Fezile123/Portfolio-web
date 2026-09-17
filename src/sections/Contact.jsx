@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, MapPin, Send, Loader2 } from "lucide-react";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
@@ -63,11 +63,19 @@ export default function Contact() {
     name: "",
     email: "",
     message: "",
+    company: "", // honeypot — real users never fill this in
   });
 
   const [errors, setErrors] = useState({});
   const [submitting, setSubmitting] = useState(false);
   const [toast, setToast] = useState(null);
+
+  const nameRef = useRef(null);
+  const emailRef = useRef(null);
+  const messageRef = useRef(null);
+  const fieldRefs = { name: nameRef, email: emailRef, message: messageRef };
+
+  const MESSAGE_MAX = 600;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -88,10 +96,30 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // Honeypot: if this hidden field has a value, it's almost certainly a bot.
+    // Pretend to succeed so the bot doesn't learn to avoid the field.
+    if (values.company) {
+      setToast({
+        type: "success",
+        message: "Message sent successfully! I'll get back to you soon.",
+      });
+      setValues({ name: "", email: "", message: "", company: "" });
+      setTimeout(() => setToast(null), 4000);
+      return;
+    }
+
     const validationErrors = validate(values);
     setErrors(validationErrors);
 
-    if (Object.keys(validationErrors).length > 0) return;
+    if (Object.keys(validationErrors).length > 0) {
+      // Move focus to the first invalid field so keyboard/screen-reader
+      // users land exactly where they need to fix something.
+      const firstErrorField = ["name", "email", "message"].find(
+        (field) => validationErrors[field]
+      );
+      fieldRefs[firstErrorField]?.current?.focus();
+      return;
+    }
 
     setSubmitting(true);
 
@@ -103,7 +131,9 @@ export default function Contact() {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          ...values,
+          name: values.name,
+          email: values.email,
+          message: values.message,
           subject: `Portfolio Contact - ${values.name}`,
         }),
       });
@@ -118,6 +148,7 @@ export default function Contact() {
           name: "",
           email: "",
           message: "",
+          company: "",
         });
       } else {
         setToast({
@@ -228,6 +259,21 @@ export default function Contact() {
                 className="space-y-6"
               >
 
+                {/* Honeypot field — hidden from sighted users, tab order, and
+                    screen readers. Bots that auto-fill every field trip it. */}
+                <div className="absolute left-[-9999px] w-px h-px overflow-hidden" aria-hidden="true">
+                  <label htmlFor="company">Company</label>
+                  <input
+                    id="company"
+                    name="company"
+                    type="text"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    value={values.company}
+                    onChange={handleChange}
+                  />
+                </div>
+
                 <div>
                   <label
                     htmlFor="name"
@@ -237,21 +283,25 @@ export default function Contact() {
                   </label>
 
                   <input
+                    ref={nameRef}
                     id="name"
                     name="name"
                     type="text"
                     value={values.name}
                     onChange={handleChange}
+                    disabled={submitting}
                     placeholder="Enter your full name"
+                    aria-invalid={Boolean(errors.name)}
+                    aria-describedby={errors.name ? "name-error" : undefined}
                     className={`w-full rounded-xl bg-white/5 border ${
                       errors.name
                         ? "border-red-400"
                         : "border-white/10"
-                    } px-4 py-3 text-text placeholder:text-muted/60 focus:outline-none focus:border-accent2 transition-all`}
+                    } px-4 py-3 text-text placeholder:text-muted/60 focus:outline-none focus:border-accent2 transition-all disabled:opacity-50 disabled:cursor-not-allowed`}
                   />
 
                   {errors.name && (
-                    <p className="mt-2 text-sm text-red-400">
+                    <p id="name-error" role="alert" className="mt-2 text-sm text-red-400">
                       {errors.name}
                     </p>
                   )}
@@ -266,50 +316,71 @@ export default function Contact() {
                   </label>
 
                   <input
+                    ref={emailRef}
                     id="email"
                     name="email"
                     type="email"
                     value={values.email}
                     onChange={handleChange}
+                    disabled={submitting}
                     placeholder="Enter your email address"
+                    aria-invalid={Boolean(errors.email)}
+                    aria-describedby={errors.email ? "email-error" : undefined}
                     className={`w-full rounded-xl bg-white/5 border ${
                       errors.email
                         ? "border-red-400"
                         : "border-white/10"
-                    } px-4 py-3 text-text placeholder:text-muted/60 focus:outline-none focus:border-accent2 transition-all`}
+                    } px-4 py-3 text-text placeholder:text-muted/60 focus:outline-none focus:border-accent2 transition-all disabled:opacity-50 disabled:cursor-not-allowed`}
                   />
 
                   {errors.email && (
-                    <p className="mt-2 text-sm text-red-400">
+                    <p id="email-error" role="alert" className="mt-2 text-sm text-red-400">
                       {errors.email}
                     </p>
                   )}
                 </div>
 
                 <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-medium text-muted mb-2"
-                  >
-                    Message
-                  </label>
+                  <div className="flex items-center justify-between mb-2">
+                    <label
+                      htmlFor="message"
+                      className="block text-sm font-medium text-muted"
+                    >
+                      Message
+                    </label>
+
+                    <span
+                      className={`text-xs ${
+                        values.message.length > MESSAGE_MAX
+                          ? "text-red-400"
+                          : "text-muted/60"
+                      }`}
+                    >
+                      {values.message.length}/{MESSAGE_MAX}
+                    </span>
+                  </div>
 
                   <textarea
+                    ref={messageRef}
                     id="message"
                     name="message"
                     rows={6}
+                    maxLength={MESSAGE_MAX}
                     value={values.message}
                     onChange={handleChange}
+                    disabled={submitting}
                     placeholder="Tell me about your project, internship opportunity, or simply say hello..."
+                    aria-invalid={Boolean(errors.message)}
+                    aria-describedby={errors.message ? "message-error" : undefined}
                     className={`w-full rounded-xl bg-white/5 border ${
                       errors.message
                         ? "border-red-400"
                         : "border-white/10"
-                    } px-4 py-3 text-text placeholder:text-muted/60 resize-none focus:outline-none focus:border-accent2 transition-all`}
+                    } px-4 py-3 text-text placeholder:text-muted/60 resize-none focus:outline-none focus:border-accent2 transition-all disabled:opacity-50 disabled:cursor-not-allowed`}
                   />
 
                   {errors.message && (
-                    <p className="mt-2 text-sm text-red-400">
+                    <p id="message-error" role="alert" className="mt-2 text-sm text-red-400">
                       {errors.message}
                     </p>
                   )}
@@ -320,7 +391,7 @@ export default function Contact() {
                   type="submit"
                   variant="primary"
                   disabled={submitting}
-                  className="w-full justify-center py-4 text-base"
+                  className="w-full justify-center py-4 text-base disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                   {submitting ? (
                     <>
