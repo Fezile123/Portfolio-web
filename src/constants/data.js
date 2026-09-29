@@ -29,7 +29,7 @@ export const PROFILE = {
 
   linkedin: "https://linkedin.com/in/fezileamnisi",
 
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/Fezile-Mnisi_Resume.pdf",
 };
 
 
