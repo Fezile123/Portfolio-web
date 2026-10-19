@@ -15,7 +15,7 @@ const EXPERIENCE = [
     type: "Internship",
     logo: capacitiLogo,
     period: "Apr 2026 – Present",
-    duration: "6 Months",
+    duration: "7 Months",
     location: "Johannesburg, Gauteng, South Africa",
 
     responsibilities: [
