@@ -1,6 +1,6 @@
 import {
-  GraduationCap,
-  Sparkles,
+  Code2,
+  BarChart3,
   Target,
   Brain,
   Puzzle,
@@ -12,8 +12,8 @@ import GlowCard from "../components/ui/GlowCard";
 import { ABOUT_HIGHLIGHTS } from "../constants/data";
 
 const ICONS = [
-  GraduationCap,
-  Sparkles,
+  Code2,
+  BarChart3,
   Brain,
   Puzzle,
   Rocket,
@@ -26,8 +26,8 @@ export default function About() {
       <div className="container-max">
         <SectionHeading
           eyebrow="About Me"
-          title="Building software that solves real-world problems."
-          description="I recently completed my BSc Mathematical Science degree with majors in Computer Science and Statistics. I enjoy developing modern web applications using React, Node.js, Python and PostgreSQL while continuously expanding my knowledge in AI, Cloud Computing and Software Engineering. I'm currently seeking Graduate Software Developer opportunities where I can contribute to meaningful projects, collaborate with experienced engineers and continue growing as a developer."
+          title="Building software and turning data into insight."
+          description="I'm a BSc Mathematical Sciences graduate with majors in Computer Science and Statistics. I build full-stack web applications with React, Node.js, Flask and PostgreSQL, and use Python, Pandas, SQL and Scikit-learn to clean, analyse and visualise data. I'm currently developing my skills through the CAPACITI YES Programme and am seeking internship, graduate and junior opportunities in software development, data analytics, AI and IT."
         />
 
         <div className="max-w-5xl mx-auto">
@@ -40,19 +40,21 @@ export default function About() {
               </h3>
 
               <p className="text-muted leading-8">
-                I'm passionate about building clean, scalable and user-friendly
-                applications that solve real business problems. My experience
-                spans frontend development, backend APIs, databases and AI
-                integration, allowing me to build complete end-to-end
-                applications.
+                I work at the intersection of software development and data
+                analytics. My Computer Science and Statistics background lets
+                me build complete end-to-end applications, from React
+                interfaces to backend APIs and databases, and also work with
+                data: cleaning it, analysing it and presenting it through
+                dashboards that support better decisions.
               </p>
 
               <p className="text-muted leading-8 mt-5">
-                I enjoy learning new technologies, working in collaborative
-                environments and continuously improving my software engineering
-                skills. Whether I'm building an AI-powered application,
-                designing REST APIs or creating responsive user interfaces, my
-                focus is always on delivering high-quality software.
+                Alongside my studies and training, I have worked in data
+                quality control at BARC SA and in IT support at the University
+                of Limpopo, which taught me accuracy, attention to detail and
+                clear communication. I enjoy learning quickly, collaborating
+                in Agile teams and delivering work that is reliable and easy
+                to use.
               </p>
             </GlowCard>
           </Reveal>

@@ -65,7 +65,7 @@ export default function Hero() {
               <span className="relative inline-flex h-2 w-2 rounded-full bg-success" />
             </span>
 
-            Open to Graduate Opportunities
+            Open to Internship &amp; Graduate Opportunities
           </motion.span>
 
           <motion.h1

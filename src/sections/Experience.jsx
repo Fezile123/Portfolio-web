@@ -10,8 +10,8 @@ import ulLogo from "../assets/images/ul.png";
 const EXPERIENCE = [
   {
     id: 1,
-    role: "End-to-End Technology Candidate",
-    company: "CAPACITI",
+    role: "End-to-End Technology Programme",
+    company: "CAPACITI (YES Programme)",
     type: "Internship",
     logo: capacitiLogo,
     period: "Apr 2026 – Present",
@@ -19,23 +19,22 @@ const EXPERIENCE = [
     location: "Johannesburg, Gauteng, South Africa",
 
     responsibilities: [
-      "Complete an industry-aligned technology training programme focused on software development, systems support, cloud computing, cybersecurity, and digital transformation.",
-      "Develop full-stack applications using modern software engineering principles and Agile methodologies.",
-      "Build REST APIs, work with databases, Git, Docker, and cloud technologies through hands-on projects.",
-      "Collaborate with multidisciplinary teams to solve real-world business challenges.",
-      "Strengthen analytical, problem-solving, communication, and professional workplace skills."
+      "Develop full-stack web applications using React, Node.js, Express and PostgreSQL in an intensive, production-focused training programme.",
+      "Build AI-powered software solutions using AI APIs and prompt engineering.",
+      "Build REST APIs and work with databases, Git, Docker and cloud technologies through hands-on projects.",
+      "Collaborate in Agile, multidisciplinary teams using Git and GitHub on real-world technology projects.",
+      "Apply software engineering best practices including clean code, testing, debugging and technical documentation."
     ],
 
     skills: [
-      "JavaScript",
       "React",
       "Node.js",
       "Express",
       "Python",
       "PostgreSQL",
+      "REST APIs",
       "Docker",
       "Git",
-      "REST APIs",
       "Agile"
     ]
   },
@@ -51,20 +50,20 @@ const EXPERIENCE = [
     location: "Johannesburg, Gauteng, South Africa",
 
     responsibilities: [
-      "Accurately captured laboratory data into laboratory information management systems.",
-      "Performed routine maintenance, cleaning, and calibration of laboratory equipment.",
-      "Conducted quality control checks on equipment, reagents, and biological samples.",
-      "Prepared, labelled, aliquoted, and stored laboratory samples for analysis.",
-      "Maintained accurate records while ensuring compliance with laboratory procedures and quality standards."
+      "Maintained data accuracy by capturing laboratory data into laboratory information management systems.",
+      "Conducted quality control checks on equipment, reagents and biological samples, applying strong attention to detail.",
+      "Maintained accurate records while ensuring compliance with standard operating procedures and quality standards.",
+      "Collaborated across teams to meet processing targets, including preparing, labelling and storing samples for analysis.",
+      "Performed routine maintenance, cleaning and calibration of laboratory equipment."
     ],
 
     skills: [
-      "Microsoft 365 Applications",
+      "Data Accuracy",
       "Data Capture",
       "Quality Control",
       "Documentation",
       "Laboratory Information Management",
-      "Problem Solving",
+      "Microsoft 365 Applications",
       "Attention to Detail"
     ]
   },
@@ -80,19 +79,18 @@ const EXPERIENCE = [
     location: "Polokwane, Limpopo, South Africa",
 
     responsibilities: [
-      "Assisted students and staff with the use of computers and IT equipment.",
-      "Provided first-line technical support for computer hardware, printers, and software issues.",
-      "Maintained computer laboratories to ensure a clean, organised, and productive learning environment.",
-      "Reported faulty hardware and technical issues to the IT department.",
-      "Supported the daily operation of university computer laboratories."
+      "Supported students with IT equipment setup and first-line troubleshooting for computer hardware, printers and software issues.",
+      "Reported hardware faults and technical issues to the IT department.",
+      "Maintained computer laboratories to ensure a clean, organised and productive learning environment.",
+      "Supported the daily operation of university computer laboratories, helping keep infrastructure available for students."
     ],
 
     skills: [
-      "Microsoft 365 Applications",
-      "Technical Support",
-      "Customer Service",
-      "Computer Hardware",
+      "IT Support",
       "Troubleshooting",
+      "Computer Hardware",
+      "Microsoft 365 Applications",
+      "Customer Service",
       "Communication",
       "Problem Solving"
     ]
@@ -177,7 +175,7 @@ export default function Experience() {
         <SectionHeading
           eyebrow="Experience"
           title="Professional Experience"
-          description="My professional journey across software development, technical support, laboratory operations, and technology training."
+          description="My experience across software development, data quality control, IT support and technology training."
         />
 
         <div className="space-y-8">

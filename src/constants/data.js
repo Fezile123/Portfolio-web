@@ -10,16 +10,16 @@ import sentimentAnalysisImage from "../assets/images/sentiment-analysis.png";
 export const PROFILE = {
   name: "Fezile Mnisi",
 
-  role: "Software Developer",
+  role: "Software Developer & Data Analyst",
 
   taglineWords: [
     "Software Developer",
-    "Backend Developer",
-    "AI Enthusiast",
+    "Data Analyst",
+    "Mathematical Sciences Graduate",
   ],
 
   summary:
-    "Software Developer passionate about building scalable web applications, AI-powered solutions, and data-driven systems. I enjoy creating modern user experiences, solving real-world problems, and continuously learning new technologies. Currently sharpening my skills through the CAPACITI YES Programme while building production-ready software projects.",
+    "Mathematical Sciences graduate and software developer building full-stack web applications and data-driven systems. I combine a Computer Science and Statistics background with hands-on experience in React, Node.js, Python, SQL and PostgreSQL to turn data into insight and ideas into working software. Currently growing through the CAPACITI YES Programme while building AI-powered and analytics projects.",
 
   email: "fezilemnisi92@gmail.com",
 
@@ -58,42 +58,42 @@ export const ABOUT_HIGHLIGHTS = [
     title: "Software Development",
 
     description:
-      "Build modern full-stack applications using React, Node.js, Express, Flask, PostgreSQL and REST APIs.",
+      "Build full-stack web applications using React, Node.js, Express, Flask, PostgreSQL and REST APIs.",
+  },
+
+  {
+    title: "Data Analytics",
+
+    description:
+      "Clean, analyse and visualise data using Python, Pandas, SQL, Scikit-learn and Matplotlib, supported by a Statistics major.",
   },
 
   {
     title: "Artificial Intelligence",
 
     description:
-      "Develop AI-powered applications using AI APIs, prompt engineering, natural language processing and machine learning techniques.",
-  },
-
-  {
-    title: "Backend Development",
-
-    description:
-      "Design secure backend systems with authentication, databases, APIs and scalable architectures.",
+      "Develop AI-powered applications using AI APIs, prompt engineering and machine learning techniques.",
   },
 
   {
     title: "Problem Solving",
 
     description:
-      "Enjoy solving real-world challenges by building efficient, maintainable and user-focused software solutions.",
+      "Apply analytical thinking to real-world challenges, building reliable, maintainable and user-focused solutions.",
   },
 
   {
     title: "Continuous Learning",
 
     description:
-      "Committed to learning new technologies, improving development practices and growing as a software engineer every day.",
+      "Committed to growing through hands-on projects and certifications in software development, AI and data analytics.",
   },
 
   {
     title: "Career Goal",
 
     description:
-      "To become a highly skilled Software Engineer building intelligent systems that create meaningful impact.",
+      "To grow as a software developer and data professional, building data-driven systems that create meaningful impact.",
   },
 ];
 
@@ -104,9 +104,9 @@ export const ABOUT_HIGHLIGHTS = [
 
 export const SKILLS = {
   Programming: [
-    { name: "Java", level: 88 },
-    { name: "JavaScript", level: 90 },
     { name: "Python", level: 85 },
+    { name: "JavaScript", level: 90 },
+    { name: "Java", level: 88 },
     { name: "SQL", level: 82 },
   ],
 
@@ -117,25 +117,47 @@ export const SKILLS = {
     { name: "Tailwind CSS", level: 88 },
   ],
 
-  Backend: [
+  "Backend & Databases": [
     { name: "Node.js", level: 86 },
     { name: "Express.js", level: 84 },
     { name: "Flask", level: 82 },
+    { name: "REST APIs", level: 85 },
     { name: "PostgreSQL", level: 80 },
+    { name: "Prisma", level: 75 },
   ],
 
-  AI: [
+  "Data & Analytics": [
+    { name: "Pandas", level: 80 },
+    { name: "Scikit-learn", level: 75 },
+    { name: "Matplotlib", level: 78 },
+    { name: "Data Cleaning", level: 82 },
+    { name: "Data Quality Control", level: 85 },
+    { name: "Dashboards", level: 78 },
+    { name: "Statistics", level: 82 },
+  ],
+
+  "AI & Machine Learning": [
     { name: "AI APIs", level: 86 },
     { name: "Prompt Engineering", level: 90 },
     { name: "Generative AI", level: 84 },
     { name: "Machine Learning", level: 78 },
+    { name: "LLMs", level: 80 },
   ],
 
-  Tools: [
+  "Tools & Practices": [
     { name: "Git", level: 92 },
     { name: "GitHub", level: 92 },
     { name: "VS Code", level: 95 },
     { name: "Docker", level: 72 },
+    { name: "Agile", level: 85 },
+    { name: "Testing & Debugging", level: 82 },
+    { name: "Technical Documentation", level: 85 },
+  ],
+
+  "IT Support": [
+    { name: "Hardware & Equipment Setup", level: 85 },
+    { name: "Troubleshooting", level: 88 },
+    { name: "Fault Reporting", level: 85 },
   ],
 
   "Soft Skills": [

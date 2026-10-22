@@ -1,4 +1,13 @@
-import { Code2, Layout, Server, Wrench, BrainCircuit, Users } from "lucide-react";
+import {
+  Code2,
+  Layout,
+  Server,
+  Wrench,
+  BrainCircuit,
+  Users,
+  BarChart3,
+  Monitor,
+} from "lucide-react";
 import SectionHeading from "../components/ui/SectionHeading";
 import Reveal from "../components/ui/Reveal";
 import GlowCard from "../components/ui/GlowCard";
@@ -7,9 +16,11 @@ import { SKILLS } from "../constants/data";
 const CATEGORY_ICONS = {
   Programming: Code2,
   Frontend: Layout,
-  Backend: Server,
-  Tools: Wrench,
-  AI: BrainCircuit,
+  "Backend & Databases": Server,
+  "Data & Analytics": BarChart3,
+  "AI & Machine Learning": BrainCircuit,
+  "Tools & Practices": Wrench,
+  "IT Support": Monitor,
   "Soft Skills": Users,
 };
 
@@ -19,8 +30,8 @@ export default function Skills() {
       <div className="container-max">
         <SectionHeading
           eyebrow="Skills"
-          title="Technologies I Work With"
-          description="A collection of programming languages, frameworks, tools, and technologies I use to build modern software applications."
+          title="Skills Across Software Development & Data"
+          description="The languages, frameworks, data tools and practices I use to build software applications and turn data into insight."
         />
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
